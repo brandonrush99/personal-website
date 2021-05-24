@@ -1,0 +1,17 @@
+.custom-line:before {
+    background: lightgray;
+    margin-top: 20px;
+}
+
+.date {
+    color: gray;
+}
+
+ul {
+    padding-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}

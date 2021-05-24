@@ -3,10 +3,27 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Workexperience from './components/workexperience';
+import Academic from './components/academic';
+import Personal from './components/personal';
+import NavigationBar from './components/navbar';
+import Resume from './components/resume';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <NavigationBar />
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/workexperience" component={Workexperience} />
+        <Route path="/academic" component={Academic} />
+        <Route path="/personal" component={Personal} />
+        <Route path="/resume" component={Resume} />
+      </Switch>
+    </Router>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

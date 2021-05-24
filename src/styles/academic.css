@@ -1,0 +1,33 @@
+.container {
+    margin-top: 20px;
+    background-color: #95d2f5;
+    height: 85vh;
+       
+}
+
+.smartscheduler {
+    max-height: 65vh;
+    max-width: 120vh;
+    opacity: 60%;
+  }
+.sentiment {
+    opacity: 60%;
+    max-height: 80vh;
+    max-width: 115vh;
+}
+h3 {
+    color: black;
+}
+p {
+    color: white;
+    font-size: larger;
+    margin: 0;
+}
+.caption {
+    background: rgba(157, 159, 161, 0.7);
+    top: auto;
+    bottom: 10%;
+}
+.item {
+    height: 80vh;
+}
