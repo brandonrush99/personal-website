@@ -1,6 +1,6 @@
 import { Worker,Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
-import { getFilePlugin, RenderDownloadProps } from '@react-pdf-viewer/get-file';
+import { getFilePlugin } from '@react-pdf-viewer/get-file';
 import PDF from '../assets/Brandon_Rush_Resume_2021.pdf';
 import { zoomPlugin } from '@react-pdf-viewer/zoom';
 import '@react-pdf-viewer/zoom/lib/styles/index.css';
