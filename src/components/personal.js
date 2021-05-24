@@ -55,7 +55,7 @@ function Personal() {
                     <Carousel.Caption className="caption">
                     <h3>This website</h3>
                     <p>I created this website using React and several powerful React libraries such as React Bootstrap and Antd.</p>
-                    <Button variant="success" href="https://github.com/brandonrush99/MovieApp">View the GitHub</Button>
+                    <Button variant="success" href="https://github.com/brandonrush99/personal-website">View the GitHub</Button>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
