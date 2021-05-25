@@ -8,15 +8,12 @@
 .friowatch {
     max-height: 65vh;
     margin-left: 36%;
-    opacity: 60%;
   }
 .movieapp {
-    opacity: 60%;
     max-height: 80vh;
     max-width: 115vh;
 }
 .personalwebsite {
-    opacity: 60%;
     max-height: 80vh;
     max-width: 115vh;
 }
@@ -29,7 +26,7 @@ p {
     margin: 0;
 }
 .caption {
-    background: rgba(157, 159, 161, 0.9);
+    background: rgba(157, 159, 161);
     top: auto;
     bottom: 10%;
 }

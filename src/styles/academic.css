@@ -8,10 +8,8 @@
 .smartscheduler {
     max-height: 65vh;
     max-width: 120vh;
-    opacity: 60%;
   }
 .sentiment {
-    opacity: 60%;
     max-height: 80vh;
     max-width: 115vh;
 }
@@ -24,7 +22,7 @@ p {
     margin: 0;
 }
 .caption {
-    background: rgba(157, 159, 161, 0.7);
+    background: rgba(157, 159, 161);
     top: auto;
     bottom: 10%;
 }
