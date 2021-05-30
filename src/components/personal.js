@@ -27,7 +27,7 @@ function Personal() {
                     <Carousel.Caption className="caption">
                     <h3 className={'text'}>Frio Watch</h3>
                     <p className={'text'}>An ios app created using Expo and React Native. This app allows users to easily view
-                        the current and historical discharge rates of the Frio River.
+                        the current and historical discharge rates of the Frio River. Download it on the IOS app store now!
                     </p>
                     <Button variant="success" href="https://github.com/brandonrush99/frio-river-utility-app">View the GitHub</Button>
                     </Carousel.Caption>
