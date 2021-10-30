@@ -11,6 +11,7 @@ import Personal from './components/personal';
 import NavigationBar from './components/navbar';
 import Resume from './components/resume';
 import PrivacyPolicyAggieMoms from './components/privacypolicies_aggiemoms';
+import PrivacyPolicyFrioWatch from './components/privacypolicy_friowatch';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.render(
         <Route path="/projects/personal" component={Personal} />
         <Route path="/resume" component={Resume} />
         <Route path="/privacypolicy/aggiemoms" component={PrivacyPolicyAggieMoms} />
+        <Route path="/privacypolicy/friowatch" component={PrivacyPolicyFrioWatch} />
       </Switch>
     </Router>
     

@@ -33,6 +33,9 @@ function NavigationBar() {
                     <LinkContainer to="/privacypolicy/aggiemoms">
                         <NavDropdown.Item>Aggie Moms Club</NavDropdown.Item>
                     </LinkContainer>
+                    <LinkContainer to="/privacypolicy/friowatch">
+                        <NavDropdown.Item>Frio Watch</NavDropdown.Item>
+                    </LinkContainer>
                 </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
