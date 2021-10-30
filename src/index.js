@@ -10,6 +10,7 @@ import Academic from './components/academic';
 import Personal from './components/personal';
 import NavigationBar from './components/navbar';
 import Resume from './components/resume';
+import PrivacyPolicy from './components/privacypolicies';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.render(
         <Route path="/academic" component={Academic} />
         <Route path="/personal" component={Personal} />
         <Route path="/resume" component={Resume} />
+        <Route path="/privacypolicy" component={PrivacyPolicy} />
       </Switch>
     </Router>
     

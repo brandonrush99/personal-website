@@ -29,6 +29,9 @@ function NavigationBar() {
                         <NavDropdown.Item>Academic</NavDropdown.Item>
                     </LinkContainer>
                 </NavDropdown>
+                <LinkContainer to="/privacypolicy">
+                    <Nav.Link>Privacy Policies</Nav.Link>
+                </LinkContainer>
                 
                 </Nav>
             </Navbar.Collapse>
