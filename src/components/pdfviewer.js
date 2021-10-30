@@ -1,14 +1,13 @@
 import { Worker,Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import { getFilePlugin } from '@react-pdf-viewer/get-file';
-import PDF from '../assets/AggieMoms_PrivacyPolicy.pdf';
 import { zoomPlugin } from '@react-pdf-viewer/zoom';
 import '@react-pdf-viewer/zoom/lib/styles/index.css';
-import '../styles/privacypolicy.css';
+import '../styles/pdfviewer.css';
 
 
 
-function PrivacyPolicy(){
+function PDFViewer(props){
     const getFilePluginInstance = getFilePlugin();
     const { Download } = getFilePluginInstance;
     const zoomPluginInstance = zoomPlugin();
@@ -16,7 +15,7 @@ function PrivacyPolicy(){
 
     return(
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-            <div className='privacyContainer'>
+            <div className='pdfContainer'>
                 <Download>
                     {
                         (props) => (
@@ -41,7 +40,7 @@ function PrivacyPolicy(){
             </div>
             <div className="viewer">
                 <Viewer 
-                    fileUrl={PDF}
+                    fileUrl={props.pdfFile}
                     plugins={[
                         getFilePluginInstance,
                         zoomPluginInstance,
@@ -52,4 +51,4 @@ function PrivacyPolicy(){
         </Worker>
     );
 }
-export default PrivacyPolicy;
+export default PDFViewer;

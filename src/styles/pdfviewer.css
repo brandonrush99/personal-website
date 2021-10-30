@@ -1,0 +1,29 @@
+.pdfContainer {
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+    
+}
+
+.viewer {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 75%;
+    width: 100%;
+    align-content: center;
+}
+
+.download {
+    background-color: #357edd;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.zoom {
+    padding: 0px 2px;
+
+}

@@ -22,17 +22,18 @@ function NavigationBar() {
                     <Nav.Link>Resume</Nav.Link>
                 </LinkContainer>
                 <NavDropdown title="Projects" id="basic-nav-dropdown">
-                    <LinkContainer to="/personal">
+                    <LinkContainer to="/projects/personal">
                         <NavDropdown.Item>Personal</NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to="/academic">
+                    <LinkContainer to="/projects/academic">
                         <NavDropdown.Item>Academic</NavDropdown.Item>
                     </LinkContainer>
                 </NavDropdown>
-                <LinkContainer to="/privacypolicy">
-                    <Nav.Link>Privacy Policies</Nav.Link>
-                </LinkContainer>
-                
+                <NavDropdown title="Privacy Policies" id="basic-nav-dropdown">
+                    <LinkContainer to="/privacypolicy/aggiemoms">
+                        <NavDropdown.Item>Aggie Moms Club</NavDropdown.Item>
+                    </LinkContainer>
+                </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
             <Button 
