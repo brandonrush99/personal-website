@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import React, {useState} from 'react';
-import Friowatch from '../assets/FrioWatch.png';
-import MovieApp from '../assets/MovieAppFavorite.JPG';
+import Friowatch from '../assets/FrioWatch.JPG';
+import AggieMomsApp from '../assets/AggieMomsOfTAMU.JPG';
 import PersonalWebsite from '../assets/PersonalWebsite.JPG';
 import '../styles/personal.css';
 import Button from 'react-bootstrap/Button';
@@ -13,51 +13,55 @@ function Personal() {
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
+
+    const carouselItems = [
+        {
+            className: 'aggiemomapp',
+            src: AggieMomsApp,
+            alt: "Aggie Moms of TAMU",
+            description: "A mobile app created using Expo and React Native that was created for the Federation of Texas A&M University Mothers' Clubs. Allows Aggie moms from across the country to get involved in their local Texas A&M Mothers Club. Available on the IOS App Store / Google Play Store now!",
+            githubLink: "https://github.com/brandonrush99/TAMU_Mothers_Club_App"
+        },
+        {
+            className: 'friowatch',
+            src: Friowatch,
+            alt: "Frio Watch",
+            description: "A mobile app created using Expo and React Native. This app allows users to easily view the current and historical discharge rates of the Frio River. Available on the IOS App Store / Google Play Store now!",
+            githubLink: "https://github.com/brandonrush99/frio-river-utility-app"
+        },
+        
+        {
+            className: 'personalwebsite',
+            src: PersonalWebsite,
+            alt: "Personal Website",
+            description: "I created this website using React and several powerful React libraries such as React Bootstrap and Antd.",
+            githubLink: "https://github.com/brandonrush99/personal-website"
+        }
+    ];
+
     return (
         
         <div className="container">
             <h1><u>Personal Projects</u></h1>
             <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-                <Carousel.Item className="item">
-                    <img
-                        className='friowatch'
-                        src={Friowatch}
-                        alt="Frio Watch"
-                    />
-                    <Carousel.Caption className="caption">
-                    <h3 className={'text'}>Frio Watch</h3>
-                    <p className={'text'}>An ios app created using Expo and React Native. This app allows users to easily view
-                        the current and historical discharge rates of the Frio River. Download it on the IOS app store now!
-                    </p>
-                    <Button variant="success" href="https://github.com/brandonrush99/frio-river-utility-app">View the GitHub</Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item className="item">
-                    <img
-                        className='movieapp'
-                        src={MovieApp}
-                        alt="Movie App"
-                    />
-                    <Carousel.Caption className="caption">
-                    <h3>MovieApp</h3>
-                    <p>A simple web app created using Angular for the frontend and .Net E.F. Core for the backend. Allows
-                    the user to search for movies and modify their own list of favorite movies.
-                    </p>
-                    <Button variant="success" href="https://github.com/brandonrush99/MovieApp">View the GitHub</Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item className="item">
-                    <img
-                        className='personalwebsite'
-                        src={PersonalWebsite}
-                        alt="Personal Website"
-                    />
-                    <Carousel.Caption className="caption">
-                    <h3>This website</h3>
-                    <p>I created this website using React and several powerful React libraries such as React Bootstrap and Antd.</p>
-                    <Button variant="success" href="https://github.com/brandonrush99/personal-website">View the GitHub</Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
+                {carouselItems.map((item, key) => {
+                    return (
+                        <Carousel.Item className="item" key={key}>
+                        <img
+                            className={item.className}
+                            src={item.src}
+                            alt={item.alt}
+                        />
+                        <Carousel.Caption className="caption">
+                        <h3 className={'text'}>{item.alt}</h3>
+                        <p className={'text'}>{item.description}</p>
+                        <Button variant="success" href="https://github.com/brandonrush99/frio-river-utility-app">View the GitHub</Button>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    )
+                })
+
+                }
             </Carousel>
         </div>
         

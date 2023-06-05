@@ -9,9 +9,9 @@
     max-height: 65vh;
     margin-left: 36%;
   }
-.movieapp {
-    max-height: 80vh;
-    max-width: 115vh;
+.aggiemomapp {
+    max-height: 65vh;
+    margin-left: 36%;
 }
 .personalwebsite {
     max-height: 80vh;
@@ -29,6 +29,8 @@ p {
     background: rgba(157, 159, 161);
     top: auto;
     bottom: 10%;
+    border-radius: 10px;
+    opacity: .97;
 }
 .item {
     height: 80vh;

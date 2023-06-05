@@ -11,6 +11,7 @@ function Academic() {
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
+
     return (
         
         <div className="container">

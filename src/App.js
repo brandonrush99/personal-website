@@ -19,7 +19,7 @@ function App() {
       <Fade cascade duration={1500}>
         <h1>A little about me</h1>
         <p>
-          I am 22 years old from The Woodlands, Texas, and am currently a Technical Consultant at Machine Automation in Houston, Texas.
+          I am 24 years old from The Woodlands, Texas, and am currently a Technical Consultant at Ashling Partners. I work remotely from Dallas, TX. 
         </p>
       </Fade>
       <Fade cascade duration={1500}>
